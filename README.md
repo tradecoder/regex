@@ -5,8 +5,8 @@ Understanding regex methods
 Test method returns true/false. 
 `Regex.test("Content of String")` 
 
-### Plain search
-* Here regex is case sensitive and find a match with a whole word.
+### Plain search with .test() method
+Here regex is case sensitive and find a match with a whole word.
 
 ```javascript
 let myText = "Yes it is";
@@ -19,7 +19,7 @@ let anotherResult = myRegex.test(anotherRegex);
 // false
 ```
 
-### Conditional search with 'Or' `|` operator
+### Conditional search with 'Or' `|` operator with .test() method
 Here regex will return true if any of the given word matches
 
 ```javascript
