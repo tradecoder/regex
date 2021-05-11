@@ -2,7 +2,7 @@
 Understanding use of regex methods.
 
 1 [.test() method](#test-method)
-2 [.match() method](#match-method)
+2 [.match() method](#match-method) 
 
 
 
