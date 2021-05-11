@@ -43,3 +43,6 @@ let result = myRegex.test(myText);
 // true . for matching one of the items 'okay'
 
 ```
+
+
+## .match() method
