@@ -19,7 +19,7 @@ let anotherResult = myRegex.test(anotherRegex);
 // false
 ```
 * Regex with case insensitive and find a match with a whole word
-* To make it add an `i` at the end of regex 
+* To make it add an `i` at the end of regex. Here `i` is 'ignore case'.
 
 ```javascript
 let myText = "Yes it is";
