@@ -4,7 +4,7 @@ Understanding use of regex methods.
 1. [.test() method](#test-method)
 * [Plain search (Case sensitive / insensitive)](#plain-search-with-test-method)
 * [Conditional search with `|` operator](#conditional-search-with-or--operator-with-test-method)
-3. [.match() method](#match-method) 
+2. [.match() method](#match-method) 
 
 
 
