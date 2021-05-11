@@ -6,7 +6,7 @@ Test method returns true/false.
 `Regex.test("Content of String")` 
 
 ### Plain search with .test() method
-Here regex is case sensitive and find a match with a whole word.
+* Regex with case sensitive and find a match with a whole word.
 
 ```javascript
 let myText = "Yes it is";
@@ -17,6 +17,15 @@ let result = myRegex.test(myText);
 let anotherRegex = /yes/;
 let anotherResult = myRegex.test(anotherRegex);
 // false
+```
+* Regex with case insensitive and find a match with a whole word
+* To make it add an `i` at the end of regex 
+
+```javascript
+let myText = "Yes it is";
+let anotherRegex = /yes/i;
+let anotherResult = anotherRegex.test(myText);
+//true
 ```
 
 ### Conditional search with 'Or' `|` operator with .test() method
