@@ -1,5 +1,10 @@
 # regex
-Understanding regex methods
+Understanding use of regex methods.
+
+1. [.test() method](#test-method)
+2. [.match() method](#match-method)
+
+
 
 ## .test() method
 Test method returns true/false. 
