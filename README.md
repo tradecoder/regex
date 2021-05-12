@@ -9,7 +9,8 @@ Understanding use of regex methods.
 
 
 ## .test() method
-Test method returns true/false. 
+Test method returns true/false.
+In this method Content of String to pass inside the test().  
 `Regex.test("Content of String")` 
 
 ### Plain search with .test() method
@@ -48,3 +49,5 @@ let result = myRegex.test(myText);
 
 
 ## .match() method
+In this method regex to pass inside the match()
+`"String".match(regexHere)`
