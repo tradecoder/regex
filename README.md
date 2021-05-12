@@ -49,5 +49,14 @@ let result = myRegex.test(myText);
 
 
 ## .match() method
-In this method regex to pass inside the match()
-`"String".match(regexHere)`
+In this method regex to pass inside the match(). It returns the word searching for if matched (full or partial from the begining), otherwise null
+
+`"String".match(/regexHere/)`
+
+```javascript
+let myText = "Yes it is";
+let myRegex = /Yes/;
+let result = myText.match(myRegex)
+// return "Yes"
+
+```
