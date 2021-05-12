@@ -73,6 +73,8 @@ let result = myText.match(myRegex);
 ### Using `g` and `i` flag together
 This will search for multiple match (global) and case insensitive (ignoreCase).
 
+Just add `gi` at the end of the regex.
+
 ```javascript
 let myText = "Yes, it is, yes, it works";
 let myRegex = /Yes/gi;
