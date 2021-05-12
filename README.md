@@ -7,7 +7,7 @@ Understanding use of regex methods.
 2. **[.match() method](#match-method)**
   * [Return single word with .match() method](#return-single-word-with-match-method)
   * [Get all matched words with .match() method](#retrun-all-words-with-match-method)
-  * [Get all matched words with .match() method ignoring case]()
+  * [Get all matched words with .match() method ignoring case](#using-g-and-i-flag-together)
 
 
 
