@@ -1,10 +1,10 @@
 # regex
 Understanding use of regex methods.
 
-1. **[.test() method](#test-method)**
+1. **[Test method](#test-method)**
   * [Plain search (Case sensitive / insensitive)](#plain-search-with-test-method)
   * [Conditional search with Or `|` operator](#conditional-search-with-or--operator-with-test-method)
-2. **[.match() method](#match-method)**
+2. **[Match method](#match-method)**
   * [Return single word with .match() method](#return-single-word-with-match-method)
   * [Get all matched words with .match() method](#retrun-all-words-with-match-method)
   * [Get all matched words with .match() method ignoring case](#using-g-and-i-flag-together)
