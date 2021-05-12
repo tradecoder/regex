@@ -52,11 +52,31 @@ let result = myRegex.test(myText);
 In this method regex to pass inside the match(). It returns the word searching for if matched (full or partial from the begining), otherwise null
 
 `"String".match(/regexHere/)`
-
+### Return single word with .match() method
 ```javascript
 let myText = "Yes it is";
 let myRegex = /Yes/;
 let result = myText.match(myRegex)
-// return "Yes"
+// returns "Yes"
 
 ```
+### Return all words with .match() method
+Just add `g` flag at the end of the regex. It will return all the matched words in an array.
+
+```javascript
+let myText = "Yes it is. Yes, it works";
+let myRegex = /Yes/g;
+let result = myText.match(myRegex);
+// returns ["Yes", "Yes"]
+```
+
+### Using `g` and `i` flag together
+This will search for multiple match (global) and case insensitive (ignoreCase).
+
+```javascript
+let myText = "Yes, it is, yes, it works";
+let myRegex = /Yes/gi;
+let result = myText.match(myRegex);
+// returns ["Yes", "yes"]
+```
+
