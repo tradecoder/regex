@@ -1,4 +1,4 @@
-# Understanding Regex
+# Use of Regex
 Understanding use of regex methods.
 
 1. **[Test method - Regex.test(String)](#test-method)**
