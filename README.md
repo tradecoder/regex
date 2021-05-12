@@ -2,9 +2,12 @@
 Understanding use of regex methods.
 
 1. **[.test() method](#test-method)**
-* [Plain search (Case sensitive / insensitive)](#plain-search-with-test-method)
-* [Conditional search with Or `|` operator](#conditional-search-with-or--operator-with-test-method)
+  * [Plain search (Case sensitive / insensitive)](#plain-search-with-test-method)
+  * [Conditional search with Or `|` operator](#conditional-search-with-or--operator-with-test-method)
 2. **[.match() method](#match-method)**
+  * [Return single word with .match() method](#return-single-word-with-match-method)
+  * [Get all matched words with .match() method](#retrun-all-words-with-match-method)
+  * [Get all matched words with .match() method ignoring case]()
 
 
 
@@ -71,8 +74,7 @@ let result = myText.match(myRegex);
 ```
 
 ### Using `g` and `i` flag together
-This will search for multiple match (global) and case insensitive (ignoreCase).
-
+This will search for multiple match (global) and case insensitive (ignoreCase). <br>
 Just add `gi` at the end of the regex.
 
 ```javascript
@@ -81,4 +83,4 @@ let myRegex = /Yes/gi;
 let result = myText.match(myRegex);
 // returns ["Yes", "yes"]
 ```
-
+### Match with wildcard dot 
