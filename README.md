@@ -8,6 +8,7 @@ Understanding use of regex methods.
   * [Return single word with .match() method](#return-single-word-with-match-method)
   * [Get all matched words with .match() method](#retrun-all-words-with-match-method)
   * [Get all matched words with .match() method ignoring case](#using-g-and-i-flag-together)
+  * [Match all words with wildcard dot](#match-with-wildcard-dot)
 
 
 
@@ -83,4 +84,6 @@ let myRegex = /Yes/gi;
 let result = myText.match(myRegex);
 // returns ["Yes", "yes"]
 ```
-### Match with wildcard dot 
+### Match with wildcard dot
+Using a wildcard dot in regex you can find all the matched word through a pattern.
+See this words- dot, don, doc, document, doll, docker... 
