@@ -92,7 +92,8 @@ If you add one dot `.` it will continue to one character after the regex word, l
 
 ```javascript
 let myText = "dot, lot, doc, pot, docker";
-let myRegex = /do./;
+let myRegex = /do./gi; 
+// since we need to search for the whole documents we added a `g` tag and then we wanted to match any case with `i` tag
 let result = myText.match(myRegex);
 // returns ["dot", "doc", "doc"] 
 // for the word docker it finds `do` then takes one more char for one dot `.` so it takes `doc` from docker
