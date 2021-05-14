@@ -85,5 +85,15 @@ let result = myText.match(myRegex);
 // returns ["Yes", "yes"]
 ```
 ### Match with wildcard dot
-Using a wildcard dot in regex you can find all the matched word through a pattern.
-See this words- dot, don, doc, document, doll, docker... 
+Using a wildcard dot in regex you can find all the matched word through a pattern. <br>
+See these words- dot, don, doc, document, doll, docker... <br>
+All are started with common `do` and you can find all the words with a wildcard dot included after `do`<br>
+If you add one dot `.` it will continue to one character after the regex word, like `/do./`  will match upto three chars, if added two dots `..` it will continue to match a word upto 4 chars and so on. 
+
+```javascript
+let myText = "dot, lot, doc, pot, docker";
+let myRegex = /do./;
+let result = myText.match(myRegex);
+// returns ["dot", "doc", "doc"] 
+// for the word docker it finds `do` then takes one more char for one dot `.` so it takes `doc` from docker
+```
