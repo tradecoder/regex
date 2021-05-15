@@ -129,3 +129,13 @@ let searchResult = myText.match(myRegex)
 
 Here we have make options also for the 3rd charatcer `[ct]`. <br>
 That means either it will be `c` or `t`. That finds also `dot` for this case.
+
+## Match a single character from a wide range of characters options
+In the above we have seen that the characters in array `[ou]` system matches with either `o` or `u`, only 2 options. We can increase it to more like `[abcdefgh]` and so on. But, if we could avoid much typing and save time by writing it with a dash between first and last chars if they are comes serially. Like `[a-h]`, it means it will find and match any one character from `a to h`, and `[a-z]` means from a to z any character. So, `[A-Z]` :  A to Z. 
+
+```javascript
+let myText = "doc, duck, december, dot";
+let myRegex = /d[a-u]c/gi; 
+let searchResult = myText.match(myRegex)
+// returns ["doc", "duc", "dec"]
+```
