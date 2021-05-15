@@ -150,3 +150,11 @@ let myRegex = /2[0-5][3-9]/g;
 let searchResult = myText.match(myRegex)
 // return ["205", "206"]
 ```
+Also
+```javascript
+let myText = "a2b02, a2b05, A2b6, k2b10";
+let myRegex = /a[0-5][a-j]/gi; 
+let searchResult = myText.match(myRegex)
+// returns [ 'a2b', 'a2b', 'A2b' ]
+```
+
