@@ -99,3 +99,19 @@ let result = myText.match(myRegex);
 // returns ["dot", "doc", "doc"] 
 // for the word docker it finds `do` then takes one more char for one dot `.` so it takes `doc` from docker
 ```
+
+### Match with options
+This type of regex will find words with a fixed begining and a fixed end character but with scopes to select the middle characters from multiple options <br>
+The following regex starts to match a word started with `d`, <br>
+then searchs for the second character from `[ou]` either `o` or `u` options, <br> 
+then finds upto the third character `c`. We also have used `gi` tags to match it global and any case. <br>
+So, it will first match `doc`, then `duc` from duck, then it will skip for december because first char is ok but second char not matched as `o` or `u`, then moved to dot and it matched first 2 chars but not the third one `c`. <br>
+Finally it will return `doc` and `duc`
+
+```javascript
+let myText = "doc, duck, december, dot";
+let myRegex = /d[ou]c/gi; 
+let searchResult = myText.match(myRegex)
+//returns ["doc", "duc"]
+```
+
