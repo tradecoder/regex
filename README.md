@@ -9,6 +9,7 @@ Understanding use of regex methods.
   * [Get all matched words with .match() method](#retrun-all-words-with-match-method)
   * [Get all matched words with .match() method ignoring case](#using-g-and-i-flag-together)
   * [Match all words with wildcard dot](#match-with-wildcard-dot)
+  * [Match a single character from multiple options](#match-a-single-character-from-multiple-options)
 
 
 
@@ -100,7 +101,7 @@ let result = myText.match(myRegex);
 // for the word docker it finds `do` then takes one more char for one dot `.` so it takes `doc` from docker
 ```
 
-### Match with options
+### Match a single character from multiple options
 This type of regex will find words with a fixed begining and a fixed end character <br> 
 but with scopes to select the middle characters from multiple options <br>
 The following regex starts to match a word started with `d`, <br>
