@@ -101,11 +101,14 @@ let result = myText.match(myRegex);
 ```
 
 ### Match with options
-This type of regex will find words with a fixed begining and a fixed end character but with scopes to select the middle characters from multiple options <br>
+This type of regex will find words with a fixed begining and a fixed end character <br> 
+but with scopes to select the middle characters from multiple options <br>
 The following regex starts to match a word started with `d`, <br>
 then searchs for the second character from `[ou]` either `o` or `u` options, <br> 
 then finds upto the third character `c`. We also have used `gi` tags to match it global and any case. <br>
-So, it will first match `doc`, then `duc` from duck, then it will skip for december because first char is ok but second char not matched as `o` or `u`, then moved to dot and it matched first 2 chars but not the third one `c`. <br>
+So, it will first match `doc`, then `duc` from duck, <br> 
+then it will skip for december because first char is ok but second char not matched as `o` or `u`, <br>
+then moved to dot and it matched first 2 chars but not the third one `c`. <br>
 Finally it will return `doc` and `duc`
 
 ```javascript
@@ -114,4 +117,14 @@ let myRegex = /d[ou]c/gi;
 let searchResult = myText.match(myRegex)
 //returns ["doc", "duc"]
 ```
+As you see, the characters inside the array `[]` in regex comes with select options, we also can use multiple options at each stage.
 
+```javascript
+let myText = "doc, duck, december, dot";
+let myRegex = /d[ou][ct]/gi; 
+let searchResult = myText.match(myRegex)
+// returns ["doc", "duc", "dot"]
+```
+
+Here we have make options also for the 3rd charatcer `[ct]`. <br>
+That means either it will be `c` or `t`. That finds also `dot` for this case.
