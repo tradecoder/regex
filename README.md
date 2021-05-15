@@ -152,9 +152,9 @@ let searchResult = myText.match(myRegex)
 ```
 Also
 ```javascript
-let myText = "a2b02, a2b05, A2b6, k2b10";
+let myText = "a2b02, a2b05, A2i6, k2b10";
 let myRegex = /a[0-5][a-j]/gi; 
 let searchResult = myText.match(myRegex)
-// returns [ 'a2b', 'a2b', 'A2b' ]
+// returns [ 'a2b', 'a2b', 'A2i' ]
 ```
 
