@@ -178,8 +178,8 @@ let result = myText.match(myRegex);
 Repeated characters are matched with a `+` sign after the character which is supposed repeated in a word. Here this regex with `l+` will find `ll` from each match
 
 ```javascript
-let myText = "ball, committee, tall";
+let myText = "ball, committee, tallll";
 let myRegex = /l+/gi; 
 let searchResult = myText.match(myRegex)
-// returns ["ll", "ll"]
+// returns ["ll", "llll"]
 ```
