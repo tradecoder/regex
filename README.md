@@ -11,6 +11,7 @@ Understanding use of regex methods.
   * [Match all words with wildcard dot](#match-with-wildcard-dot)
   * [Match a single character from multiple options](#match-a-single-character-from-multiple-options)
   * [Match a single character from a wide range of characters options](#match-a-single-character-from-a-wide-range-of-characters-options)
+  * [Match with negated character set ("Do not match")](#match-with-negated-character-set)
 
 
 
