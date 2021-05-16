@@ -12,6 +12,7 @@ Understanding use of regex methods.
   * [Match a single character from multiple options](#match-a-single-character-from-multiple-options)
   * [Match a single character from a wide range of characters options](#match-a-single-character-from-a-wide-range-of-characters-options)
   * [Match with negated character set ("Do not match")](#match-with-negated-character-set)
+  * [Match repeated characters](#match-repeated-characters)
 
 
 
@@ -171,4 +172,14 @@ let myText = "Da de di do du`";
 let myRegex = /d[^oi]/gi;
 let result = myText.match(myRegex);
 //returns ["da", "de", "du"]
+```
+
+### Match repeated characters
+Repeated characters are matched with a `+` sign after the character which is supposed repeated in a word. Here this regex with `l+` will find `ll` from each match
+
+```javascript
+let myText = "ball, committee, tall";
+let myRegex = /l+/gi; 
+let searchResult = myText.match(myRegex)
+// returns ["ll", "ll"]
 ```
