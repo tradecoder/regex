@@ -160,7 +160,7 @@ let searchResult = myText.match(myRegex)
 
 ### Match with negated character set
 This type of matching with `^` at the begining of regex means 'do not match' these characters.<br>
-When you use this regex, it will search and match all the characte except the characters given in regex. <br>
+When you use this regex, it will search and match all the characters except those given in regex. <br>
 Here we are searcing any word starting with `d` and we are saying not to match the second character if it's `o` or `i`<br>
 So, it returns only `da`, `de` and `du`. And it will skip `di` and `do`.
 
