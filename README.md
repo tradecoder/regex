@@ -185,7 +185,7 @@ let searchResult = myText.match(myRegex)
 ```
 
 ### Match one or more times with asterisk `*`
-Asterisk sign in regex matches a character one or more times 
+Asterisk sign in regex matches a character one or more times. The following regex will frist look for `a` with a single or many `l`. Here the asteris sing is with the `l` so it will match for one or more times. 
 
 ```javascript
 let myText = "ball, committee, tallll";
