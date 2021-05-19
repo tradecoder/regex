@@ -183,3 +183,13 @@ let myRegex = /l+/gi;
 let searchResult = myText.match(myRegex)
 // returns ["ll", "llll"]
 ```
+
+### Match one or more times with asterisk `*`
+Asterisk sign in regex matches a character one or more times 
+
+```javascript
+let myText = "ball, committee, tallll";
+let myRegex = /al*/gi; 
+let searchResult = myText.match(myRegex)
+// returns ["all", "allll"]
+```
